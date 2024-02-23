@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    html dung khung 
+    css lam dep trang web
+    javascrip lamf cho trang tuong tac vs nguoi dung
+ -->
+
+    <!-- tu duy lap trinh
+    1 nhap xuat
+    2 bien, kieu du lieu, toan tu
+    3 dieu kien
+    4 vong lap
+    5 mang
+    6 ham  -->
+    <button onclick="alert(1)">a</button>
+
+    <script>
+
+        //xuat
+        alert("halo");
+        document.write("halo world");
+        document.write("<h1>hello m</h1>")
+        document.write("")
+        console.log("heloevryon");
+
+        //nhap
+        prompt("moi ban nhap");
+        let a = +prompt(" moi ban dien");
+        a = a + 5;
+        alert(a);
+
+        //kieu du lieu: so ,chu ,boolean
+        //nhan chia trc cong tru sau tu trai qua phai(uu tien trong ngoac)  CONG CHUOI
+        //nhan chia tru tinh nhu binh thuong 
+        //tong khac nha
+        let b = 2;
+        let c = '2';
+        alert(a+b);
+
+        //nhap vao 2 bien a va b tinh toong 2 so
+        let d = +prompt("nhap so d la : ");
+        let e = +prompt("nhap so e la : ");
+        let f = d+e;
+        alert(f);
+
+        //TOAN TU
+        //toan tu so hoc: + - * / % mod  div
+        //toan tu gan: =, +=, -=, /=, *=, %=
+        //toan tu so sanh: ==, != , <, >, >=, <=, ===
+        //toan tu logic
+
+        let h =1;  //number
+        let k = '2'; //string
+        let g = h +k; //string
+        let j =a>=10  //Boolean
+
+        let ngay = +prompt("nhap ngay: ");
+        let thang = +prompt(" nhap thang: ");
+        let nam = +prompt("nhap nam: ");
+        alert(ngay +"-"+ thang+"-"+nam);
+    </script>
+
+   
+</body>
+</html>

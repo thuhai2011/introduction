@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="s1">
+    <input type="text" id="s2">
+    <button onclick="tong()"> tong</button>
+    <button onclick="hieu()"> hieu</button>
+    <button onclick="tich()"> tich</button>
+    <button onclick="thuong()"> thuong</button>
+    <h2 id="kq"></h2>
+    
+    <script>
+        function tong() {
+           let a = +document.getElementById("s1").value;
+           let b = +document.getElementById("s2").value;
+           document.getElementById("kq").innerHTML= "tong la:"+(a + b);
+        }
+
+        function hieu() {
+           let a = +document.getElementById("s1").value;
+           let b = +document.getElementById("s2").value;
+           document.getElementById("kq").innerHTML= "tru la:"+(a - b);
+        }
+
+        function tich() {
+           let a = +document.getElementById("s1").value;
+           let b = +document.getElementById("s2").value;
+           document.getElementById("kq").innerHTML= "tich la:"+(a * b);
+        }
+
+        function thuong() {
+           let a = +document.getElementById("s1").value;
+           let b = +document.getElementById("s2").value;
+           document.getElementById("kq").innerHTML= "thuong la:"+(a / b);
+        }
+    </script>
+</body>
+</html>

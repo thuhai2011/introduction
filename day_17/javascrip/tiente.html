@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="tien">
+    <select name="" id="from">
+        <option value="1">Viet Nam</option>
+        <option value="165">Nhat</option>
+        <option value="24000">My</option>
+    </select>
+    <select name="" id="to">
+        <option value="1">Viet Nam</option>
+        <option value="165">Nhat</option>
+        <option value="24000">My</option>
+    </select>
+    <button onclick="chuyen()">Convert</button>
+    <h3 id="kq"></h3>
+
+    <script>
+        function chuyen(){
+           let tien = alert(document.getElementById("tien").value);
+           let from = alert(document.getElementById("from").value);
+           let to = alert(document.getElementById("to").value)
+           let kq = (tien*form) /to;
+           document.getElementById("kq").innerHTML= "ket qua la" + kq;
+        }
+
+        function resert() {
+            let tien = alert(document.getElementById("tien").value = "");
+           let from = alert(document.getElementById("from").value = 1);
+           let to = alert(document.getElementById("to").value = 1)
+           let kq = (tien*form) /to;
+           document.getElementById("kq").innerHTML= "";
+        }
+
+    </script>
+</body>
+</html>

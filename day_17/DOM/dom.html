@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 400px; height: 200px ; background: pink;" id ="box"></div>
+    <input type=" text" id="inp1 " oninput="document.getElementById('box').style.background='red'">;
+    <input type="text" id="inp2 " onchange="document.getElementById('box').style.background='red'">;
+    <h2 onclick="thay()">hallo</h2>
+
+    <script>
+        function thay(){
+            document.getElementById('box').style.width='200px';
+        }
+    </script>
+</body>
+</html>

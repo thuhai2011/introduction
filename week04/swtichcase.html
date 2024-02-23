@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="mon1">
+    <input type="text" name="" id="mon2">
+    <input type="text" name="" id="mon3">
+    <select name="" id="khuvuc">
+        <option value="0.75">KV1</option>
+        <option value="0.5">KV2-NT</option>
+        <option value="0.25">KV2</option>
+        <option value="0">KV3</option>
+    </select>
+    <button onclick="tinhdiem()">tongdiem</button>
+    <h2 id="ketqua"></h2>
+    <script>
+        function tinhdiem() {
+            let t = +document.getElementById("mon1").value;
+            let v = +document.getElementById("mon2").value;
+            let a = +document.getElementById("mon3").value;
+            let kv = +document.getElementById("khuvuc").value;
+            let tong = t + v + a + kv;
+            document.getElementById("ketqua").innerHTML= "tong diem la" + tong ;
+        }
+    </script>
+</body>
+</html>
