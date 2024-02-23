@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="duong">
+    <button onclick="xem()">xem</button>
+
+    <script>
+        function xem() {
+            let  namDuong = document.getElementById("duong").value;
+            let  can = namDuong % 10;
+            let  chi = namDuong % 12;
+            let am = '';
+            let mangCan = ['Can', 'Tan', 'Nham', 'Quy','Giap','At', 'Binh','Dinh','Mau','Ky'];
+            let mangChi = ['Than', 'Dau', 'Tuat', 'Hoi','Ty', 'Suu','Dan','Meo','Thin','Ty', 'Ngo','Mui']
+            let namAmLich = mangCan[can] + mangChi[chi];
+            alert(namAmLich);
+        }
+    </script>
+</body>
+</html>
