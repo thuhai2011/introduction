@@ -7,13 +7,25 @@
 </head>
 <body>
     <script>
-        let  dem = 0;
-        while (dem < 100){
-            document.write('hello' + "<br>" ); 
-            dem =dem + 1;
+
+        let a = +prompt('nhap so a la: ');
+        let b = +prompt('nhap so b la: ');
+        let c = a ;
+        while (c <= b ) {
+            if (c % 2== 0){
+            document.write(c + "<br>");
+            }
+            c++;
         }
 
-        
+         // cach 2
+        // function inTuAtoiB(){
+        //     let inputA= parseInt(document.getElementById("A").value);
+        //     let inputB= parseInt(document.getElementById("B").value);
+        //     for(let i = inputA; i <= inputB; i++){ // Incrementing i instead of inputA
+        //         document.write(i + "<br>");
+        //     }
+        // }
     </script>
 </body>
 </html>
