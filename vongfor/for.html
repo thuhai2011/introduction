@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //nhap vao a,b in chan trong h1 va le trong h2
+        let a = +prompt("nhap vao a la:");
+        let b = +prompt("nhap vao b la:");
+        let dem = a ;
+        while (dem <= b){
+            if (dem %2== 0){
+                document.write('<h1>'+dem +'</h1>');
+            }
+            else{
+                document.write('<h2>'+dem +'</h2>');
+            }
+            dem++;
+        }
+
+
+        //nhap vao a.b .c in ra cac so chan lon hon c tuf a den b
+        let c = +prompt("nhap vao c la:");
+        let d = +prompt("nhap vao d la:");
+        let e = +prompt("nhap vao e la:");
+        for(let i = a ; i<=b; i++){
+            if (i%2 == 0 && i>c ){
+                document.write(i + "<br>");
+            }
+        }
+//
+        let g = +prompt("nhap vao so  g ");
+        let h = +prompt("nhap vao so  h ");
+        let i = g ;
+        while(i<=h){
+            i = g*h;
+            i++;
+        }
+
+    </script>
+</body>
+</html>
