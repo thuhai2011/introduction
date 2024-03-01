@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //nhập vào a và b .Tính tích các so chẵn từ a đến b
+        let a = +prompt('nhap so a la: ');
+        let b = +prompt('nhap so b la: ');
+        let tich =1 ;
+        for (let i = a ; i <= b ; i++){
+            if (i%2 == 0 ){
+                let tich = tich*i;
+            }
+        }
+        document.write("tich so chan a va b la" + tich);
+
+        //tính tổng các số chia hết cho 3 và lớn hơn 2 
+        let tong =0;
+        for (let i = a ; i <= b ; i++){
+            if (i>2 && i%3 == 0 ){
+                let tong = tong*i;
+            }
+        }
+
+        //đếm số lượng số chia hết cho 3 
+        let dem = 0;
+        for (let i = a ; i <= b ; i++){
+            if (i%3 == 0 ){
+                dem += 1;
+                
+            }
+        }
+    </script>
+</body>
+</html>
